@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Money Maw</string>
+    
+    <string-array name="spinner_value">
+        <item>--- Pilih Type ---</item>
+        <item>Pengeluaran</item>
+        <item>Pemasukan</item>
+    </string-array>
+</resources>

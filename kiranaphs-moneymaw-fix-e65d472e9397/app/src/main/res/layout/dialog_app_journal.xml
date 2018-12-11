@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPinkMuda"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Data"
+            android:textSize="16dp"
+            android:textColor="@color/colorPutih"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:hint="Masukkan Jumlah Uang"
+        android:id="@+id/dialog_app_journal_text_jumlah_uang"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/dialog_app_journal_spinner"
+        android:entries="@array/spinner_value"
+        android:padding="5dp"></Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Deskripsi"
+        android:lines="3"
+        android:gravity="top|left"
+        android:maxLines="5"
+        android:id="@+id/dialog_app_journal_edittext_deskripsi"
+        android:inputType="textMultiLine"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/dialog_app_journal_save"
+            android:background="@color/colorPinkMuda"
+            android:padding="10dp"
+            android:textColor="@color/colorPutih"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>
